@@ -1,0 +1,15 @@
+---
+title: "Blog"
+page-layout: full
+title-block-banner: false
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+  page-size: 10
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description, categories]
+  date-format: "MMMM DD, YYYY"
+---
