@@ -1,4 +1,8 @@
 - source: project
   quarto-pub:
-    - id: 03eb0642-c570-4c03-b494-6237f634e045
-      url: https://ezratandela.quarto.pub/ezra-tandela
+    - id: your-quarto-pub-id-here # Optional, remove if not using Quarto Pub
+      url: https://your-quarto-pub-url-here/ # Optional, remove if not using Quarto Pub
+  github:
+    - owner: your-github-username # Replace with your GitHub username
+      repo: mysite # Replace with your repository name
+      branch: gh-pages
