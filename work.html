@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog</title>
+<title>Work</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,8 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -52,67 +50,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="work-custom.css">
 </head>
 
 <body class="nav-fixed">
@@ -136,11 +77,11 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./work.html"> 
+    <a class="nav-link active" href="./work.html" aria-current="page"> 
 <span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -151,23 +92,33 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ym9vayUyMHJldmlldw==">book review <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
+  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations">Presentations</a></li>
+  <li><a href="#translations" id="toc-translations" class="nav-link" data-scroll-target="#translations">Translations</a></li>
+  <li><a href="#ongoing-projects" id="toc-ongoing-projects" class="nav-link" data-scroll-target="#ongoing-projects">Ongoing Projects</a></li>
+  <li><a href="#languages" id="toc-languages" class="nav-link" data-scroll-target="#languages">Languages</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Work</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
   
@@ -179,87 +130,38 @@ window.Quarto = {
 </header>
 
 
+<section id="education" class="level2">
+<h2 class="anchored" data-anchor-id="education">Education</h2>
+<p><strong>Harvard University</strong> Ph.D.&nbsp;Comparative Literature</p>
+<p><strong>University of California Los Angeles</strong> M.A.&nbsp;East Asian Studies</p>
+</section>
+<section id="presentations" class="level2">
+<h2 class="anchored" data-anchor-id="presentations">Presentations</h2>
+<p>“Dangers of Metropolitan Aspirations in Colonial Taiwan and Korea: Kim Saryang’s ‘Pegasus’ and Long Yingzong’s ‘Evening Moon’.” Conference paper, Arizona State University East Asian Studies Graduate Student Conference, January 13-14, 2023.</p>
+</section>
+<section id="translations" class="level2">
+<h2 class="anchored" data-anchor-id="translations">Translations</h2>
+<p>“Theorizing Asiatic Contradiction, UX of Contemporary Korean Literature” by Hoduk Hwang. Translated by Ezra Tandela. In Symplokē 30 No.&nbsp;1-2.</p>
+<p>“A Koreanizing World? 82nyŏnsaeng Kim Chiyŏng (Kim Ji-young, Born 1982) and Asian Values” by Hoduk Hwang. Translated by Ezra Tandela. In Critical Asia Archives: Events and Theories June 2021 (https://caarchives.org/a-koreanizing-world-ux-of-contemporary-korean-literature-and-asias-calling/)</p>
+</section>
+<section id="ongoing-projects" class="level2">
+<h2 class="anchored" data-anchor-id="ongoing-projects">Ongoing Projects</h2>
+<p>Transnational History of Decolonial in Asia from 1950-1975</p>
+</section>
+<section id="languages" class="level2">
+<h2 class="anchored" data-anchor-id="languages">Languages</h2>
+<p>Korean: Native-level fluency<br>
+English: Native-level fluency<br>
+Chinese: Native-level fluency<br>
+Japanese: Fluent<br>
+Indonesian: Fluent<br>
+Classical Chinese: Advanced reading proficiency<br>
+Classical Japanese: Intermediate reading proficiency</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Ym9vayUyMHJldmlldw==" data-listing-date-sort="1711339200000" data-listing-file-modified-sort="1742916063054" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1545">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Book Review of Yingjin Zhang.html" class="no-external">Book Review of Yingjin Zhang’s <em>Chinese National Cinema</em> (2004)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Book Review of Yingjin Zhang.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ym9vayUyMHJldmlldw=='); return false;">
-book review
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Book Review of Yingjin Zhang.html" class="no-external">Yingjin Zhang’s Chinese National Cinema (2004) was a pioneering text in Anglophone Chinese film studies scholarship. Magisterial in scope, the book is structured as a survey…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Book Review of Yingjin Zhang.html" class="no-external">
-<div class="listing-date">
-March 25, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Ym9vayUyMHJldmlldw==" data-listing-date-sort="1711339200000" data-listing-file-modified-sort="1742920733000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1515">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Book Review of Chen Pingyuan David Wang.html" class="no-external">Book Reviews of David Wang’s <em>Fin-De-Sìecle Splendor: Repressed Modernities of Late Qing Fiction</em> (1997) and <em>The Transformation of the Narrative Pattern of Chinese Novels (Zhongguo xiaoshuo xushu moshi de zhuanbian)</em> (1988)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Book Review of Chen Pingyuan David Wang.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ym9vayUyMHJldmlldw=='); return false;">
-book review
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Book Review of Chen Pingyuan David Wang.html" class="no-external">In this essay, I will be reviewing two highly influential monographs in the study of Chinese literary modernity: Chen Pingyuan’s The Transformation of the Narrative Pattern…<em></em><em></em></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Book Review of Chen Pingyuan David Wang.html" class="no-external">
-<div class="listing-date">
-March 25, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1711166400000" data-listing-file-modified-sort="1742916365254" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="16">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome.html" class="no-external">Welcome to My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome.html" class="no-external">First blog post</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome.html" class="no-external">
-<div class="listing-date">
-March 23, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -681,14 +583,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2025 Ezra Tandela</p>
-</div>   
+      &nbsp;
+    </div>   
     <div class="nav-footer-center">
+<div style="text-align: center;">
+© 2025 Ezra Tandela<br> Contact: <a href="mailto:ezratandela@g.harvard.edu">ezratandela@g.harvard.edu</a>
+</div>
+</div>
+    <div class="nav-footer-right">
       &nbsp;
     </div>
-    <div class="nav-footer-right">
-<p>Contact: <a href="mailto:ezratandela@g.harvard.edu">ezratandela@g.harvard.edu</a></p>
-</div>
   </div>
 </footer>
 
